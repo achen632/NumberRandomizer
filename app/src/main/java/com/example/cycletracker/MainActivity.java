@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Random r = new Random();
-                int random = r.nextInt(seekBar.getProgress()) + 1;
+                int random = r.nextInt(seekBar.getProgress() + 1);
                 resultsTextView.setText("" + random);
             }
         });
